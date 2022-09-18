@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Acme&family=Gideon+Roman&family=Pacifico&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> -->
+        <link rel="stylesheet" href="{{url_for('static',filename='stylesheet2.css')}}" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1 class="heading">Optical Character Recognition</h1>
+        </header>
+        <main>
+            <div class="frame">
+                <div class="center">
+                    <div class="title">
+                        <h1>Drop file to upload</h1>
+                    </div>
+            
+                     <div class="dropzone">
+                        <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
+                        <form action = "http://localhost:5000/uploader" method = "POST"
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>
+                    </div>
+
+<!--                    <button type="button" class="btn" name="uploadbutton">Upload file</button> -->
+
+            
+                </div>
+            </div>
+        </main>
+        
+        
+        
+    </body>
+</html>
